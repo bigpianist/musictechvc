@@ -5,9 +5,9 @@ markdown: kramdown
 highlighter: rouge
 
 # Site settings
-title: "Google Sheet To Github Link Website"
+title: "Music Tech VC Firms"
 description: > # this means to ignore newlines until "email:"
-   A Hack Education & API Evangelist Production
+   A List Of VC Firms Who Invest In Music Tech
 
 email: info@contrafabulists.com
 #blog logo
