@@ -41,12 +41,9 @@ title: Update Spreadsheet
     $oAuthToken = Cookies.get('token');
 
     $(document).ready( function() {
-      Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/13f94YCYTm4ljFCMEd8TAER94bujfdrewPVEx09a0ceM/edit?usp=sharing',//$key,
-                       callback: function(data, tabletop) { 
-                       console.log(data)
-                   },//callback: showInfo,
-                       //wanted: [ $resource ],
-                       simpleSheet : true,
+      Tabletop.init( { key: $key,
+                       callback: showInfo,
+                       wanted: [ $resource ],
                        debug: true } )
     })
 
