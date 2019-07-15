@@ -42,8 +42,11 @@ title: Update Spreadsheet
 
     $(document).ready( function() {
       Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/b2f03a2fc75a2c09b698f0e3a005cd90e2f89739/pubhtml',//$key,
-                       callback: showInfo,
-                       wanted: [ $resource ],
+                       callback: function(data, tabletop) { 
+                       console.log(data)
+                   },//callback: showInfo,
+                       //wanted: [ $resource ],
+                       simpleSheet : true,
                        debug: true } )
     })
 
