@@ -43,7 +43,9 @@ title: Update Spreadsheet
     console.log('pre call');
     $(document).ready( function() {
       Tabletop.init( { key: $key,
-                       callback: showInfo,
+                       callback: function(data, tabletop) { 
+                        console.log(data)
+                       },
                        wanted: [ $resource ],
                        debug: true } )
     })
