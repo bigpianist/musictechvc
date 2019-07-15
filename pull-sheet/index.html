@@ -17,7 +17,7 @@ title: Update Spreadsheet
     // Reset the cookie manually
     //Cookies.expire('token');
 
-    URL: "https://bigpianist.github.io/musictechvc/pull-sheet/?key=13f94YCYTm4ljFCMEd8TAER94bujfdrewPVEx09a0ceM&worksheet=Music%20Tech%20VC%20Firms&token=b2f03a2fc75a2c09b698f0e3a005cd90e2f89739&org=your_org&repo=your_repo&branch=master"
+    URL: https://bigpianist.github.io/musictechvc/pull-sheet/?key=13f94YCYTm4ljFCMEd8TAER94bujfdrewPVEx09a0ceM&worksheet=Music%20Tech%20VC%20Firms&token=b2f03a2fc75a2c09b698f0e3a005cd90e2f89739&org=your_org&repo=your_repo&branch=master
 
     // Incoming Variables append
     var $key = getUrlVar('key');
@@ -41,7 +41,7 @@ title: Update Spreadsheet
     $oAuthToken = Cookies.get('token');
 
     $(document).ready( function() {
-      Tabletop.init( { key: $key,
+      Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/b2f03a2fc75a2c09b698f0e3a005cd90e2f89739/pubhtml',//$key,
                        callback: showInfo,
                        wanted: [ $resource ],
                        debug: true } )
